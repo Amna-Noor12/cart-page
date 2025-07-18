@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luna Bakes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <header>
+        <nav class="navbar">
+      <div class="logo">
+        <img src="assets/logo.jpg" alt="logo" />
+      </div>
+      <h2  style="font-family: 'poppins',sans-serif; font-size: 
+      32px; font-weight: bold;color: #02554a; font-style: italic;">Welcome To Luna Bakes</h2>
+      <a 
+         href="cart.html" class="cart-icon"
+        >🛒 <span id="cart-count">0</span></a
+      >
+    </nav>
+  </header>
+  <body>
+<main>
+
+    <div class="product-container">
+      <div class="card">
+        <div class="card-img">
+          <img src="assets/beries pestry.jpg" alt="pestry-beries" />
+        </div>
+        <div class="card-details">
+          <h3>Berries Pestry</h3>
+          <p>-/1200</p>
+          <button onclick="addToCart(1)">Add to Cart</button>
+        </div>
+      </div>
+
+       <div class="card">
+        <div class="card-img">
+          <img
+            src="assets/brown pestry.jpg"
+            alt=" brown pestry"
+          />
+        </div>
+        <div class="card-details">
+          <h3>Chocolate Pestry</h3>
+          <p>-/1000</p>
+          <button onclick="addToCart(2)">Add to Cart</button>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div class="card-img">
+          <img
+            src="assets/chees mint pestry.jpg"
+            alt="chees"
+          />
+        </div>
+        <div class="card-details">
+          <h3>Chees Pestry</h3>
+          <p>-/800</p>
+          <button onclick="addToCart(3)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <img
+            src="assets/berries cake.jpg"
+            alt="besries cake"
+          />
+        </div>
+        <div class="card-details">
+          <h3>Berries Cake</h3>
+          <p>-/2000</p>
+          <button onclick="addToCart(4)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+       <script src="app.js"></script>
+    </main>
+    <footer>
+  <div class="footer">
+      <p>© 2023 Luna Bakes. All rights reserved.</p>
+    </footer>
+  
+  </body>
+</html>

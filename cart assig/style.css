@@ -1,0 +1,123 @@
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #C6E6E3;
+}
+
+nav {
+  background: #F2A2BD;
+  color: white;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  gap: 10px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+span {
+  color: #e6739f;
+  font-weight: normal;
+  font-style: italic;
+}
+
+h3, p {
+  color: #075e55;
+  font-style: italic;
+}
+
+nav a {
+  color: #075e55;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Container for both products and cart */
+.product-container,
+.cart-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5em;
+  padding: 2em;
+}
+
+/* Card style for product and cart items */
+.card,
+.cart-item {
+  background: rgb(173, 233, 203);
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #e09cca;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card img,
+.cart-item img {
+  width: 160px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5em;
+}
+
+.card-details {
+  margin-top: 0.5em;
+}
+
+/* Buttons */
+button {
+  padding: 8px 16px;
+  margin-top: 0.5em;
+  background: #F2A2BD;
+  color: #075e55;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #e6739f;
+  color: white;
+}
+
+/* Quantity controls for cart page */
+.qty-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  margin-top: 0.5em;
+}
+
+.qty-controls button {
+  padding: 6px 12px;
+  font-size: 16px;
+}
+
+/* Summary area */
+.summary {
+  padding: 1em;
+  font-size: 1.2em;
+  text-align: center;
+  color: #075e55;
+}
